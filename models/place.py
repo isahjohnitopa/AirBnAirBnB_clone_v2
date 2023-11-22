@@ -20,7 +20,7 @@ if models.storage_t == 'db':
 
 
 class Place(BaseModel, Base):
-    """Representation of Place """
+    """This is a Representation of Place """
     if models.storage_t == 'db':
         __tablename__ = 'places'
         city_id = Column(String(60), ForeignKey('cities.id'), nullable=False)
