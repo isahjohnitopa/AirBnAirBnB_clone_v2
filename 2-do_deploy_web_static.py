@@ -8,6 +8,9 @@ from fabric.api import put, run, env
 from os.path import exists
 env.hosts = ["54.144.222.67", "3.84.239.71"]
 
+# Specify your SSH key
+env.key_filename = '~/.ssh/id_rsa'
+
 
 def do_deploy(archive_path):
     """distributes an archive to the web servers"""
